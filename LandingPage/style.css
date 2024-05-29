@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col {
+    width: 48%;
+}
+
+.col-3 {
+    max-width: 32%;
+    width: 100%;
+}
+
+.col-12 {
+    max-width: 100%;
+    width: 100%;
+}
+
+header,
+footer {
+    background-color: #fff;
+
+}
+
+header nav,
+footer nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo a,
+footer nav .logo a {
+    color: #000;
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+header nav ul,
+footer nav ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav ul li,
+footer nav ul li {
+    padding: 0 10px;
+}
+
+header nav ul li a,
+footer nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #7B2869;
+    position: relative;
+}
+
+header nav ul li a::before,
+footer nav ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    background-color: #7B2869;
+    height: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav ul li a:hover::before,
+footer ul li a:hover::before {
+    width: 100%;
+}
+
+.mainSection {
+    height: 100vh;
+    background-image: url("dashboard.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.mainSection::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mainSection .container {
+    position: relative;
+    z-index: 1;
+}
+
+.mainSection .container .row {
+    justify-content: center;
+}
+
+.mainSection h1 {
+    font-size: 52px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.mainSection p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.aboutSec h1 {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.aboutSec h1 span {
+    display: block;
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.gallerySec .row {
+    flex-wrap: wrap;
+}
+
+.gallerySec h1,
+.contactSec h1 {
+    font-size: 44px;
+    text-transform: capitalize;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.gallerySec h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0;
+}
+
+.gallerySec p {
+    font-size: 14px;
+}
+
+.gallerySec .galleryBox {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gallerySec .galleryBox figure {
+    margin: 0 0 10px;
+}
+
+.gallerySec .galleryBox figure img {
+    height: 678px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/*.gallerySec .galleryBox .content {
+    padding: 10px 18px;
+}*/
+
+.contactSec form .inputCont {
+    width: 50%;
+    margin: 0 auto 20px;
+}
+
+.contactSec form .inputCont label {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+
+.contactSec form .inputCont input,
+.contactSec form .inputCont textarea {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.contactSec form .inputCont textarea {
+    height: auto;
+    min-height: 200px;
+}
+
+.contactSec form .inputCont button {
+    background-color: #7B2869;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+    padding-top: 20px;
+}
